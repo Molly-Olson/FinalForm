@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "LapisDetails";
+            lblLapis = new Label();
+            lblDetails = new Label();
+            SuspendLayout();
+            // 
+            // lblLapis
+            // 
+            lblLapis.AutoSize = true;
+            lblLapis.Location = new Point(358, 35);
+            lblLapis.Name = "lblLapis";
+            lblLapis.Size = new Size(43, 20);
+            lblLapis.TabIndex = 0;
+            lblLapis.Text = "Lapis";
+            // 
+            // lblDetails
+            // 
+            lblDetails.AutoSize = true;
+            lblDetails.Location = new Point(212, 74);
+            lblDetails.Name = "lblDetails";
+            lblDetails.Size = new Size(325, 20);
+            lblDetails.TabIndex = 1;
+            lblDetails.Text = "This is where I tell you how cool this blue rock is";
+            // 
+            // LapisDetails
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblDetails);
+            Controls.Add(lblLapis);
+            Name = "LapisDetails";
+            Text = "LapisDetails";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblLapis;
+        private Label lblDetails;
     }
 }

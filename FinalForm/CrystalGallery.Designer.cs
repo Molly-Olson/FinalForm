@@ -34,12 +34,12 @@
             picMoldavite = new PictureBox();
             picLapis = new PictureBox();
             pictureBox1 = new PictureBox();
-            lblRose = new Label();
-            lblAmethyst = new Label();
-            lblLapis = new Label();
-            lblCitrine = new Label();
-            label2 = new Label();
-            lblMoldavite = new Label();
+            btnAmethyst = new Button();
+            btnLapis = new Button();
+            btnRose = new Button();
+            btnCitrine = new Button();
+            btnMoldavite = new Button();
+            btnObsidian = new Button();
             ((System.ComponentModel.ISupportInitialize)picRose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picAmethyst).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picCitrine).BeginInit();
@@ -102,72 +102,77 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // lblRose
+            // btnAmethyst
             // 
-            lblRose.AutoSize = true;
-            lblRose.Location = new Point(94, 214);
-            lblRose.Name = "lblRose";
-            lblRose.Size = new Size(89, 20);
-            lblRose.TabIndex = 6;
-            lblRose.Text = "Rose Quartz";
+            btnAmethyst.Location = new Point(363, 210);
+            btnAmethyst.Name = "btnAmethyst";
+            btnAmethyst.Size = new Size(94, 29);
+            btnAmethyst.TabIndex = 12;
+            btnAmethyst.Text = "Amethyst";
+            btnAmethyst.UseVisualStyleBackColor = true;
+            btnAmethyst.Click += btnAmethyst_Click_1;
             // 
-            // lblAmethyst
+            // btnLapis
             // 
-            lblAmethyst.AutoSize = true;
-            lblAmethyst.Location = new Point(363, 214);
-            lblAmethyst.Name = "lblAmethyst";
-            lblAmethyst.Size = new Size(71, 20);
-            lblAmethyst.TabIndex = 7;
-            lblAmethyst.Text = "Amethyst";
+            btnLapis.Location = new Point(616, 215);
+            btnLapis.Name = "btnLapis";
+            btnLapis.Size = new Size(94, 29);
+            btnLapis.TabIndex = 13;
+            btnLapis.Text = "Lapis Lazuli";
+            btnLapis.UseVisualStyleBackColor = true;
+            btnLapis.Click += btnLapis_Click;
             // 
-            // lblLapis
+            // btnRose
             // 
-            lblLapis.AutoSize = true;
-            lblLapis.Location = new Point(628, 214);
-            lblLapis.Name = "lblLapis";
-            lblLapis.Size = new Size(85, 20);
-            lblLapis.TabIndex = 8;
-            lblLapis.Text = "Lapis Lazuli";
-            lblLapis.Click += lblLapis_Click;
+            btnRose.Location = new Point(83, 210);
+            btnRose.Name = "btnRose";
+            btnRose.Size = new Size(102, 29);
+            btnRose.TabIndex = 14;
+            btnRose.Text = "Rose Quartz";
+            btnRose.UseVisualStyleBackColor = true;
+            btnRose.Click += btnRose_Click;
             // 
-            // lblCitrine
+            // btnCitrine
             // 
-            lblCitrine.AutoSize = true;
-            lblCitrine.Location = new Point(114, 424);
-            lblCitrine.Name = "lblCitrine";
-            lblCitrine.Size = new Size(52, 20);
-            lblCitrine.TabIndex = 9;
-            lblCitrine.Text = "Citrine";
+            btnCitrine.Location = new Point(91, 427);
+            btnCitrine.Name = "btnCitrine";
+            btnCitrine.Size = new Size(94, 29);
+            btnCitrine.TabIndex = 15;
+            btnCitrine.Text = "Citrine";
+            btnCitrine.UseVisualStyleBackColor = true;
+            btnCitrine.Click += btnCitrine_Click;
             // 
-            // label2
+            // btnMoldavite
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(642, 421);
-            label2.Name = "label2";
-            label2.Size = new Size(68, 20);
-            label2.TabIndex = 10;
-            label2.Text = "Obsidian";
+            btnMoldavite.Location = new Point(363, 427);
+            btnMoldavite.Name = "btnMoldavite";
+            btnMoldavite.Size = new Size(94, 29);
+            btnMoldavite.TabIndex = 16;
+            btnMoldavite.Text = "Modavite";
+            btnMoldavite.UseVisualStyleBackColor = true;
+            btnMoldavite.Click += btnMoldavite_Click;
             // 
-            // lblMoldavite
+            // btnObsidian
             // 
-            lblMoldavite.AutoSize = true;
-            lblMoldavite.Location = new Point(363, 424);
-            lblMoldavite.Name = "lblMoldavite";
-            lblMoldavite.Size = new Size(84, 20);
-            lblMoldavite.TabIndex = 11;
-            lblMoldavite.Text = "Moldaviate";
+            btnObsidian.Location = new Point(616, 427);
+            btnObsidian.Name = "btnObsidian";
+            btnObsidian.Size = new Size(94, 29);
+            btnObsidian.TabIndex = 17;
+            btnObsidian.Text = "Obsidian";
+            btnObsidian.UseVisualStyleBackColor = true;
+            btnObsidian.Click += btnObsidian_Click;
             // 
             // CrystalGallery
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(lblMoldavite);
-            Controls.Add(label2);
-            Controls.Add(lblCitrine);
-            Controls.Add(lblLapis);
-            Controls.Add(lblAmethyst);
-            Controls.Add(lblRose);
+            ClientSize = new Size(800, 465);
+            Controls.Add(btnObsidian);
+            Controls.Add(btnMoldavite);
+            Controls.Add(btnCitrine);
+            Controls.Add(btnRose);
+            Controls.Add(btnLapis);
+            Controls.Add(btnAmethyst);
             Controls.Add(pictureBox1);
             Controls.Add(picLapis);
             Controls.Add(picMoldavite);
@@ -183,7 +188,6 @@
             ((System.ComponentModel.ISupportInitialize)picLapis).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -194,11 +198,11 @@
         private PictureBox picMoldavite;
         private PictureBox picLapis;
         private PictureBox pictureBox1;
-        private Label lblRose;
-        private Label lblAmethyst;
-        private Label lblLapis;
-        private Label lblCitrine;
-        private Label label2;
-        private Label lblMoldavite;
+        private Button btnAmethyst;
+        private Button btnLapis;
+        private Button btnRose;
+        private Button btnCitrine;
+        private Button btnMoldavite;
+        private Button btnObsidian;
     }
 }
